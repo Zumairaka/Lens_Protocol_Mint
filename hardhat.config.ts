@@ -69,12 +69,7 @@ const config: HardhatUserConfig = {
     ropsten: getCommonNetworkConfig(eEthereumNetwork.ropsten, 3),
     main: getCommonNetworkConfig(eEthereumNetwork.main, 1),
     tenderlyMain: getCommonNetworkConfig(eEthereumNetwork.tenderlyMain, 3030),
-    matic: getCommonNetworkConfig(ePolygonNetwork.matic, 137),
-    mumbai: {
-      url: 'https://rpc-mumbai.maticvigil.com/',
-      chainId: 80001,
-      accounts: [`0x${process.env.PRIVATE_KEY1}`, `0x${process.env.PRIVATE_KEY2}`],
-    },
+    matic: getCommonNetworkConfig(ePolygonNetwork.matic, 137),    
     xdai: getCommonNetworkConfig(eXDaiNetwork.xdai, 100),
     hardhat: {
       hardfork: 'london',
